@@ -6,13 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Background & Text</title>
 
-    <link rel="stylesheet" href="stylesheets/css-pages-style.css" />
-
     <style>
       body {
         color: #291541;
         background-color: ghostwhite;
         font-size: 20px;
+      }
+      nav a {
+        /* Removes the underscore at the end of the navigation elements */
+        text-decoration: none;
+
+        margin: 4px;
+
+        /* Adds styling to the border of the element */
+        border: 2px solid black; /* DO NOT use commas to seperate the values. It's different than font-family */
+
+        padding: 5px;
+
+        background-color: #003100;
+        color: #eeffee;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #003100;
+        /* TODO: Ask Mr. Hardman, why is it that when hovered, the tect colour is still the colour of the nav a:visited styling? */
+        background-color: #eeffee;
+      }
+      nav a:visited {
+        color: #c4ffc4;
       }
       h1 {
         font-size: 48px;
@@ -24,35 +45,51 @@
       section p {
         font-weight: bold;
       }
+      ul {
+        /* This gets rid of the bullet points beside each list item. */
+        list-style: none;
+      }
+      li {
+        display: inline-block;
+        /* Adds spacing around the outside of an element */
+        margin: 4px;
+
+        /* Adds spacing on the inside of an element */
+        padding: 5px;
+
+        font-size: 20px;
+      }
     </style>
   </head>
 
   <body>
     <nav>
       <ul>
-        <a href="index.html" class="nav-link">
+        <a href="index.html">
           <li>Inline CSS Page</li>
         </a>
-        <a href="internal-css.html" class="nav-link">
+        <a href="internal-css.html">
           <li>Internal CSS Page</li>
         </a>
-        <a href="external-css.html" class="nav-link">
+        <a href="external-css.html">
           <li>External CSS Page</li>
         </a>
-        <a href="testing-cascading.html" class="nav-link">
+        <a href="testing-cascading.html">
           <li>Testing Cascading Page</li>
         </a>
-        <a href="classes-and-ids.html" class="nav-link">
+        <a href="classes-and-ids.html">
           <li>Classes & IDs Page</li>
         </a>
-        <a href="div-and-span.html" class="nav-link">
+        <a href="div-and-span.html">
           <li>Divs & Spans Page</li>
         </a>
-        <a href="typography.html" class="nav-link">
+        <a href="typography.html">
           <li>Typography Page</li>
         </a>
+        <a href="backgrounds-and-text.html"> Backgrounds & Text </a>
       </ul>
     </nav>
+
     <main>
       <h1>Backgrounds & Text</h1>
       <section>
