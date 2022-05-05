@@ -1,6 +1,9 @@
 body {
   background-color: #fefbfb;
   color: #17230b;
+
+  /* Adding 5% margin top-and-bottom, and 10% marging right-and-left. */
+  margin: 5% 10%;
 }
 
 h1 {
