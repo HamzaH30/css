@@ -12,6 +12,15 @@
         background-color: ghostwhite;
         font-size: 20px;
         margin: 5% 10%;
+
+        /* Let's us define an image using a URL as the background */
+        background-image: url("images/background_1.jpg");
+
+        /* Let's us define which direction we want to have our image repeat in */
+        background-repeat: repeat;
+
+        /* Define the size of our background image, in this case it is 100% of the width and the auto size for the height */
+        /*background-size: 100% auto;*/
       }
       nav a {
         /* Removes the underscore at the end of the navigation elements */
@@ -42,6 +51,12 @@
       h1 {
         font-size: 48px;
         text-align: center;
+        /* 
+          Defines a shadow for our text that is going to be offset 0px in the horizontal direction,
+          5px in the vertical direction (positive number means going down), 0px of blur, and a 
+          colour of #e9a002 for the shadow.
+        */
+        text-shadow: 0px 5px 3px #e9a002;
       }
       section {
         background-color: #5ac88b;
@@ -98,6 +113,10 @@
           <li>Typography Page</li>
         </a>
         <a href="backgrounds-and-text.html"> Backgrounds & Text </a>
+        <a href="gradients.html">Gradients Page</a>
+        <a href="transforms-transitions-and-animations.html"
+          >Transforms, Transitions, and Animations Page</a
+        >
       </ul>
     </nav>
 
