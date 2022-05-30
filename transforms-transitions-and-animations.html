@@ -21,7 +21,121 @@
 
         /* Define the size of our background image, in this case it is 100% of the width and the auto size for the height */
         /*background-size: 100% auto;*/
+
+        /*
+          Allows us to define a name for our animation so that multiple animations can be created
+          for a single web page and the animation can be used for several different elements if we wanted
+        */
+        /* animation-name: fade-in; */
+
+        /* This defines how lons the animation will take. */
+        /* animation-duration: 10s; */
+
+        /* This defines how the animations will look within that 1s time frame. */
+        /* animation-timing-function: ease-in; */
+
+        /* This causes a 0.5 second delay before the animation starts. */
+        /* animation-delay: 0.5s; */
+
+        /* This defines how many times the animation will run. */
+        /* animation-iteration-count: 2; */
+
+        /*
+          This defines the direction your animation will run.
+          Normal is the default value, so you don't actually have to define this property.
+        */
+        /* animation-direction: normal; */
+
+        /* 
+          This allows us to keep the styling that occurs at the end of the animation.
+        */
+        /* animation-fill-mode: forwards; */
+
+        /* This is the shorthand for animation that includes all of the above animation properties. */
+        -o-animation: fade-in 1s ease-in 0.5s forwards;
+        -moz-animation: fade-in 1s ease-in 0.5s forwards;
+        -webkit-animation: fade-in 1s ease-in 0.5s forwards;
+        animation: fade-in 1s ease-in 0.5s forwards;
       }
+
+      @-o-keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0.5;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0.5;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0.5;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      /* Animation for fading in the body content */
+      @keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0.5;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      /* Animations moves in a square. */
+      @keyframes square {
+        0% {
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: 200px;
+        }
+        50% {
+          top: 200px;
+          left: 200px;
+        }
+        75% {
+          top: 200px;
+          left: 0;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+
       nav a {
         /* Removes the underscore at the end of the navigation elements */
         text-decoration: none;
@@ -63,19 +177,19 @@
       h1 {
         font-size: 48px;
         text-align: center;
-        /* 
+        /*
           Defines a shadow for our text that is going to be offset 0px in the horizontal direction,
-          5px in the vertical direction (positive number means going down), 0px of blur, and a 
+          5px in the vertical direction (positive number means going down), 0px of blur, and a
           colour of #e9a002 for the shadow.
         */
         text-shadow: 0px 5px 3px #e9a002;
 
-        /* 
+        /*
         -webkit-transform: rotate(30deg);
         -ms-transform: rotate(30deg);
         -o-transform: rotate(30deg);
         -moz-transform: rotate(30deg);
-        transform: rotate(30deg); 
+        transform: rotate(30deg);
         */
 
         /*
