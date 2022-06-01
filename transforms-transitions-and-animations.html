@@ -100,13 +100,19 @@
       /* Animation for fading in the body content */
       @keyframes fade-in {
         from {
+          /*
           position: relative;
           top: 200px;
+          */
 
-          opacity: 0.5;
+          transform: translateY(300px);
+          opacity: 0;
         }
         to {
+          /*
           top: 0;
+          */
+          transform: translateY(0);
           opacity: 1;
         }
       }
@@ -281,6 +287,7 @@
         <a href="transforms-transitions-and-animations.html">
           Transforms, Transitions, and Animations Page</a
         >
+        <a href="positioning.html"><li>Positioning Page</li></a>
       </ul>
     </nav>
 
